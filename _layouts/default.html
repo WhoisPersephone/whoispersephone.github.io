@@ -9,67 +9,66 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-     <style>
-    /* 全局背景设置 */
-    body {
-      /* 替换成你上传的背景图片名 */
-      background-image: url("/assets/images/background.jpg");
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: rgba(255, 255, 255, 0.8);
-      background-blend-mode: overlay;
-      min-height: 100vh;
-      margin: 0;
-    }
-  </style>
-</head>
+    <!-- 合并所有CSS样式（背景+文字颜色），放在head的style标签内 -->
+    <style>
+      /* 全局背景+文字样式 */
+      body {
+        /* 背景样式 */
+        background-image: url("/assets/images/background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-blend-mode: overlay;
+        min-height: 100vh;
+        margin: 0;
+
+        /* 文字样式（解决看不清问题） */
+        color: #333333; /* 深灰色正文 */
+        text-shadow: 0 0 1px rgba(255,255,255,0.5); /* 轻微阴影增强对比度 */
+      }
+
+      /* 标题文字颜色（更深更醒目） */
+      h1, h2, h3, h4, h5, h6 {
+        color: #111111;
+      }
+
+      /* 链接文字颜色（醒目蓝色） */
+      a {
+        color: #0066cc;
+      }
+
+      /* 播放按钮样式优化（可选） */
+      .bgm-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 9999; /* 保证按钮在最上层 */
+      }
+    </style>
+  </head>
+
   <body>
-body {
-  /* 原有背景样式 */
-  background-image: url("/assets/images/background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: overlay;
-  min-height: 100vh;
-  margin: 0;
+    <!-- 背景音乐（只保留一个音频标签，避免重复） -->
+    <audio id="bgm" src="/assets/audio/bgm.mp3" loop style="display: none;">
+      你的浏览器不支持音频播放
+    </audio>
 
-  /* 新增：正文文字颜色（深灰色，避免太黑刺眼） */
-  color: #333333;
-  /* 可选：增加文字对比度（轻微阴影） */
-  text-shadow: 0 0 1px rgba(255,255,255,0.5);
-}
+    <!-- 手动播放按钮（用class优化样式，更规范） -->
+    <button class="bgm-btn" onclick="document.getElementById('bgm').play()">
+      播放背景音乐
+    </button>
 
-/* 新增：标题文字颜色（更深） */
-h1, h2, h3, h4, h5, h6 {
-  color: #111111;
-}
-
-/* 新增：链接文字颜色（醒目蓝色） */
-a {
-  color: #0066cc;
-}
-    
-<audio src="/assets/audio/bgm.mp3" autoplay loop style="display: none;">
-    你的浏览器不支持音频播放
-</audio>
-<!-- 隐藏的音频播放器 -->
-<audio id="bgm" src="/assets/audio/bgm.mp3" loop style="display: none;">
-    你的浏览器不支持音频播放
-</audio>
-
-<!-- 手动播放按钮（固定在页面右下角，样式可自定义） -->
-<button style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background: #333; color: white; border: none; border-radius: 5px; cursor: pointer;"
-        onclick="document.getElementById('bgm').play()">
-    播放背景音乐
-</button>
+    <!-- 原有页面内容（保留，不要删） -->
     {% include browser-upgrade.html %}
     {% include masthead.html %}
-
     {{ content }}
 
     <div class="page__footer">
@@ -80,6 +79,5 @@ a {
     </div>
 
     {% include scripts.html %}
-
   </body>
 </html>
