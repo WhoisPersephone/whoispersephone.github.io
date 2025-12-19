@@ -12,8 +12,8 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "石榴花"
 title_separator          : "who is persephone"
 name                     : &name "Aloe"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+description              : &description "石榴花"   # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : https://whoispersephone.github.io/ # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -28,9 +28,9 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
-  employer         : "Red Brick University"
+  employer         : "绥化学院"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "3381360265@qq.com" 
 
   # Academic websites
   academia         : # URL
