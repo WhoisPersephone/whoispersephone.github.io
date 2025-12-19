@@ -26,7 +26,34 @@ layout: compress
   </style>
 </head>
   <body>
+body {
+  /* 原有背景样式 */
+  background-image: url("/assets/images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  margin: 0;
 
+  /* 新增：正文文字颜色（深灰色，避免太黑刺眼） */
+  color: #333333;
+  /* 可选：增加文字对比度（轻微阴影） */
+  text-shadow: 0 0 1px rgba(255,255,255,0.5);
+}
+
+/* 新增：标题文字颜色（更深） */
+h1, h2, h3, h4, h5, h6 {
+  color: #111111;
+}
+
+/* 新增：链接文字颜色（醒目蓝色） */
+a {
+  color: #0066cc;
+}
+    
 <audio src="/assets/audio/bgm.mp3" autoplay loop style="display: none;">
     你的浏览器不支持音频播放
 </audio>
