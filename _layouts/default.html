@@ -10,7 +10,28 @@ layout: compress
     {% include head.html %}
     {% include head/custom.html %}
   </head>
-
+      <style>
+        /* 全局背景设置 */
+        body {
+            /* 替换成你上传的背景图片名，比如bg.jpg/background.png */
+            background-image: url("/assets/images/background.jpg");
+            /* 图片铺满屏幕且不变形 */
+            background-size: cover;
+            /* 滚动页面时背景固定 */
+            background-attachment: fixed;
+            /* 图片居中显示 */
+            background-position: center;
+            /* 防止图片重复平铺 */
+            background-repeat: no-repeat;
+            /* 半透明遮罩，让文字更清晰（可调整0.8这个数值） */
+            background-color: rgba(255, 255, 255, 0.8);
+            background-blend-mode: overlay;
+            /* 保证背景铺满整个屏幕高度 */
+            min-height: 100vh;
+            /* 去掉页面默认的边距 */
+            margin: 0;
+        }
+    </style>
   <body>
 
 <audio src="/assets/audio/bgm.mp3" autoplay loop style="display: none;">
