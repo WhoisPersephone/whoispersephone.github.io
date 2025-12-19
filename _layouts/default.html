@@ -16,7 +16,16 @@ layout: compress
 <audio src="/assets/audio/bgm.mp3" autoplay loop style="display: none;">
     你的浏览器不支持音频播放
 </audio>
+<!-- 隐藏的音频播放器 -->
+<audio id="bgm" src="/assets/audio/bgm.mp3" loop style="display: none;">
+    你的浏览器不支持音频播放
+</audio>
 
+<!-- 手动播放按钮（固定在页面右下角，样式可自定义） -->
+<button style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background: #333; color: white; border: none; border-radius: 5px; cursor: pointer;"
+        onclick="document.getElementById('bgm').play()">
+    播放背景音乐
+</button>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
