@@ -39,7 +39,7 @@ layout: compress
         color: #0066cc;
       }
 
-      /* 音符样式的播放按钮（核心修改） */
+      /* ♫ 音符按钮样式（简洁美观） */
       .bgm-btn {
         position: fixed;
         bottom: 20px;
@@ -54,62 +54,41 @@ layout: compress
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* 立体阴影 */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* 轻微阴影更立体 */
         transition: all 0.3s ease; /* 悬浮动画过渡 */
         z-index: 9999; /* 保证按钮在最上层 */
-        padding: 0; /* 清除原有内边距 */
+        font-size: 24px; /* 音符大小 */
+        padding: 0;
       }
 
-      /* 悬浮时按钮放大+变色，增加交互感 */
+      /* 悬浮效果：轻微放大+颜色变浅 */
       .bgm-btn:hover {
         background-color: #555;
         transform: scale(1.1); /* 放大10% */
       }
 
-      /* 纯CSS音符图标（无需图片） */
-      .music-icon {
-        position: relative;
-        width: 20px;
-        height: 20px;
-        border: 2px solid white;
-        border-radius: 0 50% 50% 50%; /* 音符弧形 */
-        transform: rotate(-30deg); /* 音符倾斜角度 */
-      }
-
-      /* 音符的小尾巴 */
-      .music-icon::after {
-        content: '';
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        background-color: white;
-        border-radius: 50%;
-        top: -4px;
-        right: -4px;
-      }
-
-      /* 可选：播放后音符旋转动画（取消注释即可启用） */
+      /* 可选：播放后音符旋转动画（取消注释启用） */
       /*
-      .bgm-btn.playing .music-icon {
+      .bgm-btn.playing {
         animation: spin 3s linear infinite;
       }
       @keyframes spin {
-        0% { transform: rotate(-30deg); }
-        100% { transform: rotate(330deg); }
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
       */
     </style>
   </head>
 
   <body>
-    <!-- 背景音乐（保留原有音频标签） -->
+    <!-- 背景音乐 -->
     <audio id="bgm" src="/assets/audio/bgm.mp3" loop style="display: none;">
       你的浏览器不支持音频播放
     </audio>
 
-    <!-- 音符样式的播放按钮（替换原有文字按钮） -->
+    <!-- ♫ 音符播放按钮（核心修改） -->
     <button class="bgm-btn" onclick="document.getElementById('bgm').play(); this.classList.add('playing')">
-      <span class="music-icon"></span>
+      ♫
     </button>
 
     <!-- 原有页面内容（保留不变） -->
