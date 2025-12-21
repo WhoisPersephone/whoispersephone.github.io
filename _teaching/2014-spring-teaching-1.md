@@ -38,21 +38,21 @@ author_profile: true
   <!-- 第一张图：替换成你的image1.png直链 -->
   <div class="game-item">
     <img src="images/image1.png" alt="游戏实机画面1" class="game-img">
-    <p class="game-text">游戏场景1</p>
+    <p class="game-text">静侍之森>jp>
   </div>
   <!-- 第二张图：替换成你的image2.png直链 -->
   <div class="game-item">
     <img src="images/image2.png" alt="游戏实机画面2" class="game-img">
-    <p class="game-text">游戏场景2</p>
+    <p class="game-text">卧室>wp>
   </div>
   <!-- 第三张图：替换成你的image3.png直链 -->
   <div class="game-item">
     <img src="images/image3.png" alt="游戏实机画面3" class="game-img">
-    <p class="game-text">游戏场景3</p>
+    <p class="game-text">黑暗密林>hp>
   </div>
   <!-- 第四张图：替换成你的image4.png直链 -->
   <div class="game-item">
     <img src="images/image4.png" alt="游戏实机画面4" class="game-img">
-    <p class="game-text">游戏场景4</p>
+    <p class="game-text">龙和女巫的隐居处>lp>
   </div>
 </div>
