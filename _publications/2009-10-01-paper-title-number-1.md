@@ -23,24 +23,4 @@ citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 
            alt="YOU" 
            style="width: 100%; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
     </div>
-
-    <!-- 右侧：角色简介卡片 -->
-    <div style="flex: 1; min-width: 300px;">
-      <h1 style="color: #333; margin-bottom: 20px;">你的角色名称</h1>
-      <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08);">
-        <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 10px 0;">
-          <strong>年龄：</strong>填写角色年龄
-        </p>
-        <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 10px 0;">
-          <strong>性格：</strong>填写角色性格（比如：活泼开朗、外冷内热）
-        </p>
-        <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 10px 0;">
-          <strong>背景：</strong>填写角色简介（比如：来自奇幻世界的冒险者，喜欢甜食和冒险）
-        </p>
-        <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 10px 0;">
-          <strong>喜好：</strong>填写角色喜好（比如：甜食、星空、小动物）
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+这就是你。
