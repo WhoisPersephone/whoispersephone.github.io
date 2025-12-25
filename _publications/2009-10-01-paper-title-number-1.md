@@ -23,4 +23,24 @@ citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 
            alt="YOU" 
            style="width: 100%; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
     </div>
-这就是你。
+
+    <!-- 右侧：角色简介卡片 -->
+    <div style="flex: 1; min-width: 300px;">
+      <h1 style="color: #333; margin-bottom: 20px;">这就是你。</h1>
+      <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08);">
+        <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 10px 0;">
+          <strong>年龄：</strong>这一次约22岁
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 10px 0;">
+          <strong>真名：</strong>珀%&尔赛#&
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 10px 0;">
+          <strong>背景：</strong>失去了除了名字以外的所有记忆。
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 10px 0;">
+          <strong>武器：</strong>全能
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
