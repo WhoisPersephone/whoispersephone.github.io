@@ -1,25 +1,24 @@
 ---
-title: "地平线下的孩子们"  # 可以改成"角色介绍"，也可以保留原标题
+title: "地平线下的孩子们"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'  # 模板要求的字段，保留即可
+excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2009-10-01
-venue: 'Journal 1'  # 模板要求的字段，保留即可
-slidesurl: 'https://academicpages.github.io/files/slides1.pdf'  # 模板要求的字段，保留即可
-paperurl: 'https://academicpages.github.io/files/paper1.pdf'  # 模板要求的字段，保留即可
-bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'  # 模板要求的字段，保留即可
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'  # 模板要求的字段，保留即可
+venue: 'Journal 1'
+slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
+paperurl: 'https://academicpages.github.io/files/paper1.pdf'
+bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
+citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
-<!-- 以下是角色立绘+简介的核心内容，替换掉原来的论文文字 -->
+<!-- 角色立绘+简介核心内容 -->
 <div style="max-width: 1000px; margin: 40px auto; padding: 20px;">
   <!-- 立绘+简介布局容器 -->
   <div style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
-    <!-- 左侧：角色立绘 -->
+    <!-- 左侧：角色立绘（正确路径，对应assets/images/you.png） -->
     <div style="flex: 0 0 300px;">
-      <!-- 替换下面的链接为你的角色立绘链接 -->
-      <img src="images/you.png" 
+      <img src="/assets/images/you.png" 
            alt="YOU" 
            style="width: 100%; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
     </div>
@@ -43,4 +42,12 @@ citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 
       </div>
     </div>
   </div>
+</div>
+
+<!-- 底部B站按钮（替换了原来的脸书等按钮，无其他无用按钮） -->
+<div style="max-width: 1000px; margin: 20px auto; padding: 0 20px;">
+  <a href="https://space.bilibili.com/422668012?spm_id_from=333.1007.0.0"  <!-- 这里替换成你的B站主页链接 -->
+     style="background: #FB7299; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-size: 14px;">
+    我的哔哩哔哩主页
+  </a>
 </div>
