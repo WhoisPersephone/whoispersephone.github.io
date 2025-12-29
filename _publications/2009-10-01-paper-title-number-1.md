@@ -18,7 +18,7 @@ citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 
   <div style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
     <!-- 左侧：角色立绘（正确路径，对应assets/images/you.png） -->
     <div style="flex: 0 0 300px;">
-      <img src="/assets/images/you.png" 
+      <img src="/_publications/images/you.png" 
            alt="YOU" 
            style="width: 100%; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
     </div>
